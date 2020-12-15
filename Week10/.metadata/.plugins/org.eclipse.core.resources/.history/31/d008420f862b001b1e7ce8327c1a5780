@@ -1,0 +1,8 @@
+import javax.swing.JPanel;
+
+public class OneHundredButtonsManning {
+	public static void main(String[] args) {
+		JPanel panel = new JPanel();
+	}
+	
+}

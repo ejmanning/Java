@@ -1,0 +1,10 @@
+
+public class BlanketTesterManning {
+	public static void main(String[]args) {
+		Blanket one = new Blanket("king", "blue", "cashmere");
+		
+		//one.setSize("twwin");
+		
+		System.out.println(one.getPrice());
+	}
+}

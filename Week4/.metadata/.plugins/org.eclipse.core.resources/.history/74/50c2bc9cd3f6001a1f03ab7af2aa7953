@@ -1,0 +1,29 @@
+import java.text.DecimalFormat;
+
+public class PhotoBillingManning {
+	public static void main(String [] args) {
+		
+		DecimalFormat df = new DecimalFormat(".00");
+		
+		df.format(computePhotoBill(19.99));   // 21.19
+
+		df.format(computePhotoBill(19.99, 2));   // 42.38
+
+		df.format(computePhotoBill (19.99, 2, .1));   // 38.14
+
+	}
+	
+	public static double computePhotoBill(double price) {
+		 final double TAX = 0.06;
+		 double addToPrice = price * TAX;
+		 return price + addToPrice;
+	}
+	
+	public static double computePhotoBill(double price, int quantity) {
+		final double TAX = 0.06;
+		double together = price * quantity;
+		double addToPrice = together * TAX;
+		return together + addToPrice;
+		
+	}
+}

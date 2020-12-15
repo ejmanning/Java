@@ -1,0 +1,12 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PasswordValidationManningTest extends PasswordValidationManning {
+
+	@Test
+	void testValidatePassword() {
+		fail("Not yet implemented");
+	}
+
+}

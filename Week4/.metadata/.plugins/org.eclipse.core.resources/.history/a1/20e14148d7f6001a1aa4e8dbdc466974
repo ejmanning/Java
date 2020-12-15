@@ -1,0 +1,22 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SayThankYouManningTest extends SayThankYouManning {
+
+	@Test
+	void testSayThanksString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSayThanksStringString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSayThanksStringStringString() {
+		fail("Not yet implemented");
+	}
+
+}

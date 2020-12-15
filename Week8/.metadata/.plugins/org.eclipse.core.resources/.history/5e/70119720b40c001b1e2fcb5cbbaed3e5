@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+public class ArrayListExampleManning {
+	//Erica Manning
+	public static void main(String[] args) {
+		
+		ArrayList<String> names = new ArrayList<String>();
+	    System.out.println(names);
+	    
+	    names.add("Andy" + "Angela" + "Dwight" + "Erin" + "Jim" + "Michael" +  "Pam" + "Toby");
+	    System.out.println(names);
+	}
+	 
+}

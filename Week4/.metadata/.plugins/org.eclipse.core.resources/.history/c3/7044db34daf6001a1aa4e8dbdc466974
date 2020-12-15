@@ -1,0 +1,12 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CompoundInterestManningTest extends CompoundInterestManning {
+
+	@Test
+	void testComputeBalance() {
+		assertEquals(1141.17, CompoundInterestManning.computeBalance(1000, 0.45, 3));
+	}
+
+}

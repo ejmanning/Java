@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.IOException;
+public class BadArrayIndexManning {
+	public static void main(String [] args) {
+		
+		ArrayList<String> firstNames = new ArrayList<String>();
+	   
+	    firstNames.add("Erica");
+	    firstNames.add("Joseph");
+	    firstNames.add("Cindy");
+	    firstNames.add("Stan");
+	    firstNames.add("Emily");
+	    firstNames.add("Megan");
+	    firstNames.add("Hannah");
+	    firstNames.add("Nick");
+	    firstNames.add("Tatum");
+	    firstNames.add("Cody");
+	    
+	    System.out.println(firstNames);
+	    
+		
+		Scanner in = new Scanner(System.in);
+		
+		
+	}
+}

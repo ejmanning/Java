@@ -1,0 +1,4 @@
+12345|BIO101|11:15|12:55|Instructor [firstName=Wanda Jean, lastName=Smith, email=wsmith@dmacc.edu]|Classroom [building=3, roomNumber=17, campus=Ankeny, type=Science Lab, capacity=22]
+23456|CIS171|10:10|12:20|Instructor [firstName=Wilma, lastName=Fitz, email=wfitz@dmacc.edu]|Classroom [building=8, roomNumber=17, campus=Ankeny, type=Computer Lab, capacity=25]
+29876|LIT105|15:15|16:30|Instructor [firstName=Emily, lastName=Theo, email=etheo@dmacc.edu]|Classroom [building=2, roomNumber=12, campus=Urban, type=Classroom, capacity=18]
+WDV321|Advanced Javascript|12:30|15:30|Instructor [firstName=Erica, lastName=Manning, email=emanning@dmacc.edu]|Classroom [building=19, roomNumber=20, campus=Ankeny, type=WDV, capacity=20]

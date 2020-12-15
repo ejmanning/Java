@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.IOException;
+public class BadArrayIndexManning {
+	public static void main(String [] args) {
+		
+		boolean done = false;
+		
+		while(!done) {
+				
+			ArrayList<String> firstNames = new ArrayList<String>();
+		   
+		    firstNames.add("Erica");
+		    firstNames.add("Joseph");
+		    firstNames.add("Cindy");
+		    firstNames.add("Stan");
+		    firstNames.add("Emily");
+		    firstNames.add("Megan");
+		    firstNames.add("Hannah");
+		    firstNames.add("Nick");
+		    firstNames.add("Tatum");
+		    firstNames.add("Cody");
+		 
+			Scanner in = new Scanner(System.in);
+			
+			System.out.println("Enter a number 0-9 to see what name is in that position in the array: ");
+			
+			if (in.hasNextInt()) {
+				int index = in.nextInt();
+				
+				System.out.println(firstNames.get(index));
+			}
+		}
+		
+		
+	}
+}

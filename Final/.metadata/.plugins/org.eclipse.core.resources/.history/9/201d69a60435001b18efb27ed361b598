@@ -1,0 +1,45 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import logic.Budget;
+
+class BudgetTest {
+	Budget b = new Budget();
+	Budget b1 = new Budget();
+	
+	b.setMonthlyIncome(2000);
+	b.setHousingExpenses(750);
+	b.setInsuranceAndUtilities(50);
+	b.setAutomobileExpenses(100);
+	b.setRestaurantsAndFood(400);
+
+	@Test
+	void testPercentOfIncome1() {
+		
+		
+		double total = b.percentOfIncome(b);
+		
+		assertEquals(65, total, 0.01);
+	
+		
+		b1.setMonthlyIncome(4000);
+		b1.setHousingExpenses(1000);
+		b1.setInsuranceAndUtilities(100);
+		b1.setAutomobileExpenses(300);
+		b1.setRestaurantsAndFood(600);
+		
+		double total1 = b1.percentOfIncome(b1);
+		
+		assertEquals(50, total1, 0.01);
+	}
+	
+	void testDollarsLeft() {
+		
+	}
+	
+	
+	
+}

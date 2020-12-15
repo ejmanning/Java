@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+/Users/ericamanning/Desktop/CIS171Workspace/Week3/.metadata/.plugins/org.eclipse.jdt.core
+2888432219.index
+3881978332.index
+1147291027.index
+3677499224.index
+3492246790.index
+3958471410.index

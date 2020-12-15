@@ -1,0 +1,25 @@
+
+public class DataTypeDemoManning {
+	//Erica Manning
+	public static void main(String[] args) {
+		
+	int age=19; //
+	double sisterAge=20.5; //
+	float ageDifference=2; //
+	final boolean ANSWER=true;//
+	short petFish=5;//
+	long schoolYears=10000;//
+	byte greatGrandParentsAge=127;
+	char hope='A';
+	
+	System.out.println("My name is Erica Manning and I am " + age + " years old.");
+	System.out.println("I have a sister who is " + sisterAge + " years old.");
+	System.out.println("She is almost " + ageDifference + " years older than me."); 
+	System.out.println("It is " + ANSWER + " that I am sometimes jealous of her age.");
+	System.out.println("But I know I will get there soon. It feels like I have been in school for " + schoolYears + " years. Hopefully this year goes by quickly.");
+	System.out.println("My sister and I have had " + petFish + " goldfish together.");
+	System.out.println("Today I discovered that if my great grandma was still alive, she would be " + greatGrandParentsAge + " years old."); 
+	System.out.println("I surely hope I get an " + hope + " on this assignment! :)");
+	}
+}
+	

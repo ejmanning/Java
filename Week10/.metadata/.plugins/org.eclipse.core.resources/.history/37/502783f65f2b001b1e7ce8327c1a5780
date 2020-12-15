@@ -1,0 +1,29 @@
+
+public class Ticket {
+	private int ticketsRemaining;
+
+	public Ticket() {
+		
+	}
+	
+	public Ticket(int ticketsRemaining) {
+		this.ticketsRemaining = ticketsRemaining;
+	}
+
+
+
+	public int getTicketsRemaining() {
+		return ticketsRemaining;
+	}
+
+	public void setTicketsRemaining(int ticketsRemaining) {
+		this.ticketsRemaining = ticketsRemaining;
+	}
+	
+	public String ticketsStatement() {
+		return "There are " + ticketsRemaining + " left for the show.";
+	}
+	
+	
+
+}

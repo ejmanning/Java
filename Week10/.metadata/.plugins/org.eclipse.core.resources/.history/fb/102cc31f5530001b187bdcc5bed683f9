@@ -1,0 +1,24 @@
+
+public class ElectricBlanket extends Blanket {
+	private int heatSettings;
+	private boolean hasAutoShutOff;
+	public int getHeatSettings() {
+		return heatSettings;
+	}
+	public void setHeatSettings(int heatSettings) {
+		this.heatSettings = heatSettings;
+		
+		if (heatSettings < 1 || heatSettings < 5) {
+			heatSettings = 1;
+		}
+	}
+	public boolean isHasAutoShutOff() {
+		return hasAutoShutOff;
+	}
+	
+	public void setHasAutoShutOff(boolean hasAutoShutOff) {
+		this.hasAutoShutOff = hasAutoShutOff;
+	}
+	
+	
+}

@@ -1,0 +1,15 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class ButtonViewer1 {
+	public static void main(String [] args) {
+		JFrame frame = new ButtonFrame1();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		frame.setTitle("Click the Buttons");
+		JButton button = new JButton("A");
+		JPanel panel = new JPanel();
+		panel.add(button);
+	}
+}	

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class AverageAgeManning {
+	public static void main(String[] args) {
+			
+			Scanner in = new Scanner(System.in);
+				System.out.println("How many people would you like to enter: ");
+				int amountOfPeople = in.nextInt();
+				
+				int totalCombinedAge = "";
+				
+				while (amountOfPeople > 0) {
+					System.out.print("Enter an age: ");
+					int personAge = in.nextInt();
+					totalCombinedAge =+ personAge;
+					amountOfPeople--;
+				}
+					
+				double averageAge = (double) (totalCombinedAge) / amountOfPeople;
+			
+				System.out.println("The average age is " + averageAge);
+					
+					
+	}
+}
+

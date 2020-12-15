@@ -1,0 +1,11 @@
+package logic;
+
+public class Budget {
+	private double monthlyIncome;
+	private double housingExpenses;
+	private double insuranceAndUtilities;
+	private double restaurantsAndFood;
+	private double automobileExpenses;
+	
+	
+}

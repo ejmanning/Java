@@ -1,0 +1,22 @@
+
+public class CompoudInterestManning {
+	public static void main(String [] args) {
+		System.out.printf("Your total is $%.2f", computeBalance(5000, .05, 10));
+
+		// should return $8144.47
+		
+		System.out.printf("\nYour total is $%.2f", computeBalance(2000, .03, 5));
+
+		// should return $2318.55
+
+
+	}
+	
+	public static double computeBalance(double initialDeposit, double interestRate, int years) {
+		double firstStepFutureValue = 1 + interestRate;
+		double secondStepFutureValue = Math.pow(firstStepFutureValue, years);
+		double futureValue = secondStepFutureValue * initialDeposit;
+		
+		return futureValue;
+	}
+}

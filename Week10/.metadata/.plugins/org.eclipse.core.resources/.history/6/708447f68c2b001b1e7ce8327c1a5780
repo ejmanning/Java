@@ -1,0 +1,27 @@
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class ButtonFrame1 extends JFrame {
+	
+	private static final long serialVersionUID = 1L;
+	private static final int FRAME_WIDTH = 600;
+	private static final int FRAME_HEIGHT = 200;
+	
+	public ButtonFrame1() {
+		createComponents();
+		setSize(FRAME_WIDTH, FRAME_HEIGHT);
+	}
+	
+	private void createComponents() {
+		JButton button = new JButton("A");
+		JPanel panel = new JPanel();
+		panel.add(button1);
+		
+		ActionListener listener = new ClickListener();
+		button.addActionListener(listener);
+		
+	}
+}

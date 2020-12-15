@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ArrayEqualCheckManningTest.java&apos; to &apos;EqualArrayCheckManningTest.java&apos;&#x0A;- Original project: &apos;ArrrayEqualCheckManning&apos;&#x0A;- Original element: &apos;ArrayEqualCheckManningTest.java&apos;&#x0A;- Renamed element: &apos;EqualArrayCheckManningTest.java&apos;" description="Rename compilation unit &apos;ArrayEqualCheckManningTest.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{ArrayEqualCheckManningTest.java" name="EqualArrayCheckManningTest.java" references="false" stamp="1602458524125" version="1.0"/>
+</session>

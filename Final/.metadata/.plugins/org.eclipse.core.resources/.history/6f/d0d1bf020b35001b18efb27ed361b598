@@ -1,0 +1,10 @@
+//Erica Manning
+//This class shows the frame, panel, and buttons
+public class BudgetMain {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

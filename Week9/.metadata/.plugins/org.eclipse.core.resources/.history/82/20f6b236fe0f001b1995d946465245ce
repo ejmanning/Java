@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+
+public class BadArrayIndexManning {
+	public static void main(String [] args) {
+		String firstNames[] = {"Erica", "Joseph", "Cindy", "Stan", "Emily", "Hannah", "Megan", "Nick", "Tatum", "Cody"};
+		String integer;
+		boolean done = false;
+		while (!done) {
+			try {
+				System.out.println("Please, enter an integer from 1 to 10 to display a name in the array: ");
+				
+				Scanner in = new Scanner(System.in);
+				
+				integer = in.nextLine(); 
+				int i = Integer.parseInt(integer);
+				i = i-1;
+				System.out.println(firstNames[i]);
+				in.close();
+				
+				done = true;
+			}
+			
+			catch (ArrayIndexOutOfBoundsException exception) {
+				System.out.println("The number you entered is out of range");
+			}
+		}
+		
+	}
+}

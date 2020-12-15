@@ -1,0 +1,14 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JComponent;
+
+public class Component extends JComponent {
+	public void paintComponent(Graphics b, Graphics w) {
+		b.fillOval(240, 240, 20, 20);
+		
+		w.setColor(Color.WHITE);
+		b.fillOval(225, 225, 50, 50);
+		w.drawOval(210, 210, 80, 80);
+	}
+}

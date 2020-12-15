@@ -1,0 +1,41 @@
+
+public class Ticket {
+	private int ticketsRemaining;
+	private int ticketsBuying;
+	private int cost;
+
+	public Ticket() {
+		
+	}
+	
+	public Ticket(int ticketsRemaining) {
+		this.ticketsRemaining = ticketsRemaining;
+	}
+
+
+
+	public int getTicketsRemaining() {
+		return ticketsRemaining;
+	}
+
+	public void setTicketsRemaining(int ticketsRemaining) {
+		this.ticketsRemaining = ticketsRemaining;
+	}
+	
+	public int getCost() {
+		return cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+	
+	public String ticketsStatement() {
+		
+		if (ticketsRemaining )
+		return "There are " + ticketsRemaining + " left for the show.";
+	}
+	
+	
+
+}

@@ -1,0 +1,51 @@
+package graphics;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JComponent;
+
+import logic.Budget;
+
+public class BudgetDrawing extends JComponent {
+	
+	private int x = 0;
+	private int y = 0;
+	private int totalLength = 400;
+	private int height = 40;
+	private int fillForFirstSection = 400;
+	
+	Color changeColor = Color.darkGray;
+	
+	public void paintComponent(Graphics g) {
+		
+		g.setColor(Color.darkGray);
+		g.fillRect(x, y, totalLength, height);
+		
+		g.setColor(changeColor);
+		g.fillRect(x, y, fillForFirstSection, height);
+
+	}
+
+	public void adjustFill(double fillAmount) {
+		int fill = totalLength * fillAmount;
+		fillForFirstSection = (int)fill;
+		if(fillAmount >= 1) {
+			changeColor = Color.red;
+		}
+		else if(fillAmount < 0.7) {
+			changeColor = Color.green;
+		}
+		else {
+			changeColor = Color.blue;
+		}
+		
+		repaint();
+		
+	}
+	
+	public void clear() {
+		changeColor = Color.darkGray;
+	}
+	
+}

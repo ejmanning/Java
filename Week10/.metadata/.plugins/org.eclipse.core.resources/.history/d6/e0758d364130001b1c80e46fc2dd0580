@@ -1,0 +1,17 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JComponent;
+
+public class StopLightDrawing extends JComponent {
+	
+	Color go = Color.gray;
+	Color slow = Color.gray;
+	Color stop = Color.gray;
+	
+	
+	public void paintComponent(Graphics g) {
+		g.setColor(Color.yellow);
+		g.fillRect(0, 0, 150, 250);
+	}
+}

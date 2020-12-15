@@ -1,0 +1,53 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class MidtermManning {
+	//Erica Manning
+	public static void main(String [] args) {
+		
+		Scanner in = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat("0.00");
+		System.out.println("Enter First Name: ");
+		String firstName = in.nextLine();
+		firstName =Character.toUpperCase(firstName.charAt(0)) + firstName.substring(1);
+		
+			boolean enterAnother = true;
+			while(enterAnother) {
+				
+				if (firstName.equals("ZZZ")) {
+					enterAnother = false;
+					break;	
+				}
+				
+				System.out.println("Enter Total Sales: ");
+				double totalSales = in.nextDouble();
+				
+				System.out.println("Press y for all-star, n for non-all-star: ");
+				String allStarCheck = in.next();
+				
+				System.out.println(firstName + " - $"  + df.format(bonusCalculator(allStarCheck, totalSales)));
+				
+				System.out.println("Please enter another name or ZZZ to quit: ");
+				firstName = in.nextLine();
+			}
+			
+			System.out.println("Goodbye");
+		
+	}
+	
+	public static double bonusCalculator(String allStarCheck, double totalSales) {
+		double bonusTotal = 0;
+		final double N_BONUS_AMOUNT = 0.02;	
+		final double Y_BONUS_AMOUNT = 0.03;	
+		if (allStarCheck.toLowerCase() == "y") {
+			bonusTotal = totalSales * Y_BONUS_AMOUNT;
+			
+		}
+		else if (allStarCheck.toLowerCase() == "n") {
+			bonusTotal = totalSales * N_BONUS_AMOUNT;
+		}
+		
+		
+		
+		return bonusTotal;
+	}
+}

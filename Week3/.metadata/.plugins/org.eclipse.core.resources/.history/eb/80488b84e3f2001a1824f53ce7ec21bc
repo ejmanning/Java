@@ -1,0 +1,21 @@
+import java.util.Scanner;
+	public class CompareNamesManning {
+		public void main(String [] args) {
+			
+			Scanner in = new Scanner(System.in);
+		
+			System.out.print("Enter a name: ");
+			String name1 = in.nextLine();
+			
+			System.out.print("Enter another name: ");
+			String name2 = in.nextLine();
+			
+			boolean result = name1.equalsIgnoreCase(name2);
+			
+			System.out.println("These names are the same: " + result);
+		
+		
+	}
+	
+}
+

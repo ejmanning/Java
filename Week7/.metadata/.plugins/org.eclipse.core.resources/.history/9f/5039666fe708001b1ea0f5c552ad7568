@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class MidtermManning {
+	public static void main(String [] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter First Name: ");
+		String firstName = in.nextLine();
+		firstName =Character.toUpperCase(firstName.charAt(0)) + firstName.substring(1);
+		
+		System.out.println("Enter Total Sales: ");
+		double totalSales = in.nextDouble();
+		
+		totalSales = totalSales++;
+		
+		System.out.println("Press y for all-star, n for non-all-star: ");
+		String allStarCheck = in.nextLine();
+		
+		double bonusAmount;	
+		if (allStarCheck.toLowerCase() == "y") {
+			bonusAmount = 0.03;
+		}
+		else if (allStarCheck.toLowerCase() == "n") {
+			bonusAmount = 0.02;
+		}
+		
+		in.close();
+		
+	}
+}

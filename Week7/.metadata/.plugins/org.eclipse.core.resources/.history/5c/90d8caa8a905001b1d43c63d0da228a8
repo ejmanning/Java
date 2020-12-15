@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class VowelCountManning {
+	public static void main(String [] args) {
+		int vowelCount = 0;
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Please enter a word: ");
+		String word = in.nextLine();
+		
+		for(int i=0; i < word.length(); i++) {
+			String sub = word.substring(i, i+1);
+			
+			if (sub.equalsIgnoreCase("a") || sub.equalsIgnoreCase("e") || sub.equalsIgnoreCase("i") || sub.equalsIgnoreCase("o") || sub.equalsIgnoreCase("u")) {
+				vowelCount++;
+			}
+			
+			if (vowelCount==0) {
+				if (sub.equalsIgnoreCase("y")) {
+					vowelCount++;
+				}
+			}
+			
+			/*if (vowelCount==0) {
+				System.out.println("You must have made a spelling mistake somewhere.");
+				
+			}*/
+					
+		}
+		
+		System.out.println(vowelCount + " vowel(s) in " + word);
+			
+		
+		
+	}
+}

@@ -1,0 +1,63 @@
+
+public class Ticket {
+	private int ticketsRemaining = 28;
+	private static int ticketsBuying;
+	private int cost = 200 * getTicketsBuying();
+	
+	public Ticket() {
+		
+	}
+	
+	public Ticket(int ticketsRemaining) {
+		this.ticketsRemaining = ticketsRemaining;
+	}
+
+
+
+	public int getTicketsRemaining() {
+		return ticketsRemaining;
+	}
+
+	public void setTicketsRemaining(int ticketsRemaining) {
+		this.ticketsRemaining = ticketsRemaining;
+	}
+	
+	public int getCost() {
+		return cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+	
+	public int getTicketsBuying() {
+		return ticketsBuying;
+	}
+
+	public static void setTicketsBuying(int ticketsBuying) {
+		this.ticketsBuying = ticketsBuying;
+	}
+
+	
+	public String ticketsStatement() {
+		String result = "";
+		
+		if (ticketsBuying > ticketsRemaining) {
+			result = "Sorry there are only " + ticketsRemaining + " tickets left.";
+		}
+		else if (ticketsBuying == ticketsRemaining) {
+			ticketsRemaining = ticketsRemaining - ticketsBuying;
+			result = "Congrats! You took the last tickets. There are " + ticketsRemaining + " tickets left. Your total is $" + cost;
+		}
+		else if (ticketsBuying < ticketsRemaining) {
+			ticketsRemaining = ticketsRemaining - ticketsBuying;
+			result = "Your total is $" + cost + ". There are " + ticketsRemaining + " tickets left.";
+		}
+		
+		return result;
+	
+	}
+	
+	
+
+}

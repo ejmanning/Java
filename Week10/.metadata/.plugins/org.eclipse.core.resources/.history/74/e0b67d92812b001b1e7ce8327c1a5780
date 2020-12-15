@@ -1,0 +1,32 @@
+package controller;
+
+import java.io.File;
+import java.util.ArrayList;
+
+public class ClassroomFileHelper implements FileHelper {
+	String nameOfFile	= "classrooms.txt";
+	File classroomList	= new File(nameOfFile);
+
+	@Override
+	public boolean doesAFileExist() {
+		if(classroomList.exists())	{
+			return	true;
+		} else {
+			return	false;
+		}
+		
+	}
+
+	@Override
+	public ArrayList<?> readFile() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean writeFile(ArrayList<?> list) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+}

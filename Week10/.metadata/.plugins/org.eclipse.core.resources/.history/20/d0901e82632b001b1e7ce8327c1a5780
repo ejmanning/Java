@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class TicketTester {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("How many tickets would you like to buy?");
+		int ticketsBuying = in.nextInt();
+		
+		
+		Ticket.setTicketsBuying(ticketsBuying);
+		
+		
+		
+		in.close();
+
+	}
+
+}

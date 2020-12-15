@@ -1,0 +1,12 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class OnlineBookOrderWithMethodManningTest extends OnlineBookOrderWithMethodManning {
+
+	@Test
+	void testGetTotal() {
+		assertEquals(79.71, OnlineBookOrderWithMethodManning.getTotal(79.71));
+	}
+
+}

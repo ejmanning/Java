@@ -1,0 +1,18 @@
+
+public class DataTypeDemoManning {
+	
+	public static void main(String[] args) {
+		
+	int age=19;
+	double sisterAge=20.5; 
+	float ageDifference=2;
+	boolean answer=true;
+	short petFish=5;
+	long ancestors=10000;
+	byte greatGrandParentsAge=127;
+	char favoriteNumber=0;
+	
+	System.out.println("My name is Erica Manning and I am " + age + " years old.");
+	}
+}
+	

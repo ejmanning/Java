@@ -1,0 +1,38 @@
+package graphics;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JComponent;
+
+import logic.Budget;
+
+public class BudgetDrawing extends JComponent {
+	
+	Color na = Color.darkGray;
+	Color bad = Color.red;
+	Color ok = Color.blue;
+	Color good = Color.green;
+	
+	String activeLight = "red";
+	
+	public void paintComponent(Graphics g) {
+		g.setColor(Color.darkGray);
+		g.fillRect(0, 0, 300, 40);
+		
+		g.setColor(Color.black);
+		g.drawRect(0, 0, 300, 40);
+		
+		g.setColor(na);
+		g.drawRect(0, 0, 300, 40);
+
+	}
+	
+	public void changeColor() {
+		Budget b = new Budget();
+		if(b.percentOfIncome(b) < 50) {
+			
+		}
+	}
+	
+}

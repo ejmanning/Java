@@ -1,0 +1,127 @@
+package graphics;
+
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import logic.Budget;
+
+public class BudgetPanel extends JPanel {
+	
+		Budget budget;
+	
+		BudgetDrawing bar = new BudgetDrawing();
+	
+		final int FIELD_WIDTH = 10;
+		
+		JLabel monthlyIncomeLabel = new JLabel("Monthly Income: ");
+		JTextField monthlyIncomeText = new JTextField(FIELD_WIDTH);
+		
+		JLabel housingExpensesLabel = new JLabel("Housing Expenses: ");
+		JTextField housingExpensesText = new JTextField(FIELD_WIDTH);
+		
+		JLabel insuranceAndUtilitiesLabel = new JLabel("Insurance and Utilities: ");
+		JTextField insuranceAndUtilitiesText = new JTextField(FIELD_WIDTH);
+		
+		JLabel restaurantsAndFoodLabel = new JLabel("Restaurants and Food: ");
+		JTextField restaurantsAndFoodText = new JTextField(FIELD_WIDTH);
+		
+		JLabel automobileExpensesLabel = new JLabel("Automobile Expenses: ");
+		JTextField automobileExpensesText = new JTextField(FIELD_WIDTH);
+
+		JLabel generalLabel = new JLabel("Enter data to see amount remaining in budget.");	
+		
+		JButton reset = new JButton("Clear");
+		JButton submit = new JButton("Submit");
+
+		resetListener r = new resetListener();
+		submitListener s = new submitListener();
+		
+		public BudgetPanel(Budget b) {
+			budget = b;
+			
+			reset.addActionListener(r);
+			submit.addActionListener(s);
+			
+			bar.setPreferredSize(new Dimension(260, 90));
+			
+			add(monthlyIncomeLabel);
+			add(monthlyIncomeText);
+			add(housingExpensesLabel);
+			add(housingExpensesText);
+			add(insuranceAndUtilitiesLabel);
+			add(insuranceAndUtilitiesText);
+			add(restaurantsAndFoodLabel);
+			add(restaurantsAndFoodText);
+			add(automobileExpensesLabel);
+			add(automobileExpensesText);
+			add(reset);
+			add(submit);
+			add(bar);
+			add(generalLabel);
+		}
+	
+	class resetListener implements ActionListener {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			monthlyIncomeText.setText("");
+			housingExpensesText.setText(""); 
+			insuranceAndUtilitiesText.setText("");
+			restaurantsAndFoodText.setText("");
+			automobileExpensesText.setText("");
+			generalLabel.setText("Enter data to see amount remaining in budget.");
+			
+		}
+	}
+	
+	class submitListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			
+			String mi = monthlyIncomeText.getText();
+			String he = housingExpensesText.getText();
+			String iu = insuranceAndUtilitiesText.getText();
+			String rf = restaurantsAndFoodText.getText();
+			String ae = automobileExpensesText.getText();
+			
+			
+			try {
+				double monthlyIncomeAmount = Double.parseDouble(mi);
+				budget.setMonthlyIncome(monthlyIncomeAmount);
+				double housingExpensesAmount = Double.parseDouble(he);
+				budget.setHousingExpenses(housingExpensesAmount);
+				double insuranceAndUtilitiesAmount = Double.parseDouble(iu);
+				budget.setInsuranceAndUtilities(insuranceAndUtilitiesAmount);
+				double restaurantsAndFoodAmount = Double.parseDouble(rf);
+				budget.setRestaurantsAndFood(restaurantsAndFoodAmount);
+				double automobileExpensesAmount = Double.parseDouble(ae);
+				budget.setAutomobileExpenses(automobileExpensesAmount);
+			}
+			
+			catch (Exception exception) {
+				generalLabel.setText("Data entry error. Try again.");
+			}
+			
+			//b.percentOfIncome(b);
+			b.dollarsLeft(b);
+			
+			
+			if (dollarsLeft(b) >= 0) {
+				DecimalFormat df = new DecimalFormat("###.00");
+				generalLabel.setText("$" + df.format(b.dollarsLeft(b)) + " remaining in budget");
+			}
+			else if (b.dollarsLeft(b) < 0) {
+				generalLabel.setText("OVER BUDGET");
+			}
+		}
+		
+	}
+}

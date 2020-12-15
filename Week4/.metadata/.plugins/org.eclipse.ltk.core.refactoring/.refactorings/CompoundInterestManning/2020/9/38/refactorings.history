@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;CompoudInterestManningTest.java&apos; to &apos;CompoundInterestManningTest.java&apos;&#x0A;- Original project: &apos;CompoundInterestManning&apos;&#x0A;- Original element: &apos;CompoudInterestManningTest.java&apos;&#x0A;- Renamed element: &apos;CompoundInterestManningTest.java&apos;" description="Rename compilation unit &apos;CompoudInterestManningTest.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{CompoudInterestManningTest.java" name="CompoundInterestManningTest.java" references="false" stamp="1600122695576" version="1.0"/>
+</session>

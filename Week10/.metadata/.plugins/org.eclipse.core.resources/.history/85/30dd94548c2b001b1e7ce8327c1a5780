@@ -1,0 +1,6 @@
+import javax.swing.JFrame;
+
+public class ButtonFrame1 extends JFrame {
+	private static final int FRAME_WIDTH = 100;
+	private static final int FRAME_HEIGHT = 60;
+}

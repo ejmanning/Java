@@ -1,0 +1,4 @@
+3,17,Ankeny,Science Lab,22
+2,12,Urban,Classroom,18
+8,17,Ankeny,Computer Lab,25
+19,20,Ankeny,WDV,20

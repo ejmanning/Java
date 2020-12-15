@@ -1,0 +1,12 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class OnlineBookOrderWithMethodManningTest extends OnlineBookOrderWithMethodManning {
+
+	@Test
+	void testGetTotal() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,14 @@
+
+public class BlanketTesterManning {
+	public static void main(String[]args) {
+		//Blanket one = new Blanket("king", "blue", "cashmere");
+		//System.out.println(one.getPrice());
+		//System.out.println(el.featureReport());
+		
+		Blanket one = new ElectricBlanket("king", "gold", "cashmere");
+		//one.setSize("twwin"); 
+		//allows it to throw illegal argument exception and see error message
+		
+		
+	}
+}

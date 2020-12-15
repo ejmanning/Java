@@ -1,0 +1,12 @@
+
+import java.util.Scanner;
+
+public class MadLibsManning {
+	public static void main(String [] args) {
+		
+		Scanner in = new Scanner(System.in); 
+		
+		System.out.print("Enter your full name (first, middle, and last): ");
+		String firstName = in.nextLine();
+	}
+}

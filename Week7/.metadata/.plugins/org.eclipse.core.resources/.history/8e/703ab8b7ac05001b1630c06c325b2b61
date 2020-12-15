@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class VowelFoundManning {
+	public static void main(String [] args) {
+		vowelFound();
+		
+		
+		
+	}
+	
+	public static void vowelFound() {
+		Scanner in = new Scanner(System.in);
+		int vowelCount = 0;
+		
+		
+		
+		for(int i=0; i < word.length(); i++) {
+			
+			System.out.println("Please enter a word: ");
+			String word = in.nextLine();
+			
+			String sub = word.substring(i, i+1);
+			
+			if (vowelCount==1) {
+				System.out.println("A vowel has been found");
+				break;	
+			}
+			
+			if (sub.equalsIgnoreCase("a") || sub.equalsIgnoreCase("e") || sub.equalsIgnoreCase("i") || sub.equalsIgnoreCase("o") || sub.equalsIgnoreCase("u")) {
+				vowelCount++;
+			}
+			
+			
+				
+			
+		}
+		in.close();
+	}
+}

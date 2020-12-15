@@ -1,0 +1,41 @@
+
+import java.util.Scanner;
+
+public class MadLibsManning {
+	public static void main(String [] args) {
+		
+		Scanner in = new Scanner(System.in); 
+		
+		System.out.print("Enter a name: ");
+		String person = in.nextLine();
+		
+		System.out.print("Enter a number: ");
+		int age = in.nextInt();
+		
+		System.out.print("Enter a food: ");
+		String food = in.nextLine();
+		
+		System.out.print("Enter a drink: ");
+		String drink = in.nextLine();
+		
+		System.out.print("Enter a number: ");
+		int numberOfPeople = in.nextInt();
+		
+		System.out.print("Enter an object: ");
+		String object1 = in.nextLine();
+		
+		System.out.print("Enter another object: ");
+		String object2 = in.nextLine();
+		
+		System.out.print("Enter an adjective: ");
+		String adj = in.nextLine();
+		
+		
+		
+		System.out.println(person + "had a birthday party today! " + person + " turned " + age + " years old! At the birthday party there was yummy " + food + " to eat and " + drink + " to drink! There were nearly " + numberOfPeople + "there and I saw a " + object1 + " and quite a " + object2 + ". It was so much fun!" );
+		
+		
+		
+		
+	}
+}

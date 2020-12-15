@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+public class ArrayListExampleManning {
+	//Erica Manning
+	public static void main(String[] args) {
+		
+		ArrayList<String> names = new ArrayList<String>();
+	    System.out.println(names);
+	    
+	    names.add("Andy");
+	    names.add("Angela");
+	    names.add("Dwight");
+	    names.add("Erin");
+	    names.add("Jim");
+	    names.add("Michael");
+	    names.add("Pam");
+	    names.add("Toby");
+	  
+	    System.out.print("Printed names: ");
+	    for (int i = 0; i<names.size(); i++) {
+	    	System.out.print(names.get(i) + " ");
+	    }
+	    
+	    System.out.println("Name size: " + names.size());
+	    
+	    names.set(0, "Andy Bernard");
+	    
+	    for (int i = 0; i<names.size(); i++) {
+	    	System.out.println(names.get(i));
+	    }
+	}
+	 
+}

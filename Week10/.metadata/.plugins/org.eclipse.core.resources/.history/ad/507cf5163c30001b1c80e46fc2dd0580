@@ -1,0 +1,17 @@
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+
+public class Viewer {
+	public static void main(String[]args) {
+		JFrame frame = new JFrame();
+		
+		frame.setSize(100,100);
+		frame.setTitle("Bullseye");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JComponent circle1 = new Component();
+		frame.add(circle1);
+		
+		frame.setVisible(true);
+	}
+}

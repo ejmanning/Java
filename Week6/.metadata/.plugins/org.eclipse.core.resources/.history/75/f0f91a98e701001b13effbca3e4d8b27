@@ -1,0 +1,82 @@
+import java.util.Scanner;
+public class PasswordValidationManning {
+	public static void main(String [] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Enter a password: ");
+		String password = in.nextLine();
+		
+		System.out.println("Please confirm your password: ");
+		String confirmedPassword = in.nextLine();
+		
+		//System.out.println(validatePassword(password, confirmedPassword));
+		
+		if (validatePassword(password, confirmedPassword) == true) {
+			System.out.println("Password changed");
+			
+		}
+		
+		
+	}
+	
+	
+	public static boolean validatePassword(String password, String confirmedPassword) {
+		boolean valid = true;
+		
+		/*while(!password.equals(confirmedPassword)) {
+			valid = false;
+			System.out.println("Confirmed password is not the same as password");
+			return valid;
+			
+		}
+		
+		while(!(password.length() >= 8)) {
+			valid = false;
+			System.out.println("Password must be 8 or more characters");
+			return valid;
+			
+		} */
+		
+		/*int i = 0;
+		boolean upper = false;
+		while (i < password.length()) {
+			Character.isUpperCase(password.charAt(i));
+			
+			if (Character.isUpperCase(password.charAt(i)) == false) {
+				i++;
+				upper = false;
+			}
+			else {
+				upper = true;
+			}
+			
+			if (upper = false) {
+				System.out.println("NEEDS A cap");
+				valid = false;
+				
+			}
+			else {
+				valid = true;
+			} */
+			
+			
+			int i = 0;
+			
+			while (i < password.length()) {
+				Character.isUpperCase(password.charAt(i));
+				
+				if (Character.isUpperCase(password.charAt(i)) == false) {
+					i++;
+				}
+				else {
+				}
+				if (false) {
+					System.out.println("NEEDS A cap");
+				}
+			}
+				
+		
+		return valid;
+	}
+}

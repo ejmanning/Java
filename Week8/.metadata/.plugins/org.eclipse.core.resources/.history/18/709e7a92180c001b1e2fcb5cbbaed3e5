@@ -1,0 +1,19 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class EqualArrayCheckManningTest extends EqualArrayCheckManning {
+
+	@Test
+	void testAreArraysEqual() {
+		assertTrue(EqualArrayCheckManning.areArraysEqual(array1, array2));
+		assertFalse(EqualArrayCheckManning.areArraysEqual(array2, array3));
+		assertFalse(EqualArrayCheckManning.areArraysEqual(arr3, arr4));
+		assertFalse(EqualArrayCheckManning.areArraysEqual(arr4, arr5));
+		assertFalse(EqualArrayCheckManning.areArraysEqual(arr4, arr1));
+	}
+
+	
+	}
+
+}

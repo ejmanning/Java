@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class FitnessFirstManning {
+	public static void main(String [] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("This program allows users to enter their member IDs and number of minutes they want for their massage"); 
+		
+		String ID = JOptionPane.showInputDialog("Enter your gym member ID");
+		ID = ID.toUpperCase();
+		String formattedID = ID.substring(0,2) + "-" + ID.substring(2,5) + "-" + ID.substring(5);
+		
+		String inputMinutes = JOptionPane.showInputDialog("Enter the number of minutes for your massage: ");
+		int minutes = Integer.parseInt(inputMinutes);
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

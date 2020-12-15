@@ -1,0 +1,7 @@
+import java.awt.event.ActionEvent;
+
+public class ClickListener {
+	public void actionPerformed(ActionEvent event) {
+		System.out.println("I was clicked" + " times!")
+	}
+}

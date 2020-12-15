@@ -1,0 +1,9 @@
+import java.awt.Graphics;
+
+import javax.swing.JComponent;
+
+public class Component extends JComponent {
+	public void paintComponent(Graphics g) {
+		g.fillOval(25, 25, 10, 10);
+	}
+}

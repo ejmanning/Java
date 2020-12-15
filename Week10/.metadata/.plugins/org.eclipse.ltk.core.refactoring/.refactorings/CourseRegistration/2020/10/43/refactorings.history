@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Classroon&apos; to &apos;Classroom&apos;&#x0A;- Original project: &apos;CourseRegistration&apos;&#x0A;- Original element: &apos;Classroon&apos;&#x0A;- Renamed element: &apos;Classroom&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Classroon&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Classroon.java[Classroon" matchStrategy="1" name="Classroom" qualified="false" references="true" similarDeclarations="false" stamp="1603413941296" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+
+public class MultiplicationTableManning {
+	public static void main(String [] args) {
+		int row = 12;
+		int column = 12;
+		
+		for (int r = 1; r <=row; r++) {
+			System.out.printf("%4d", r*row);
+		}
+		
+		
+	}
+}	

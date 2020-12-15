@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class MidtermManning {
+	public static void main(String [] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Enter First Name: ");
+		String firstName = in.nextLine();
+		firstName =Character.toUpperCase(firstName.charAt(0)) + firstName.substring(1);
+		
+			boolean enterAnother = true;
+			while(enterAnother) {
+		
+				System.out.println("Enter Total Sales: ");
+				double totalSales = in.nextDouble();
+				
+				System.out.println("Press y for all-star, n for non-all-star: ");
+				String allStarCheck = in.next();
+				
+				System.out.println(firstName + " - "  + bonusCalculator(allStarCheck, totalSales));
+				
+				System.out.println("Please enter another name or ZZZ to quit: ");
+				
+				firstName = in.nextLine();
+				
+				if (firstName.equals("ZZZ")) {
+					enterAnother = false;
+				}
+			}
+	
+		
+	}
+	
+	public static double bonusCalculator(String allStarCheck, double totalSales) {
+		double bonusTotal;
+		double bonusAmount = 0;	
+		if (allStarCheck.toLowerCase() == "y") {
+			bonusAmount = 0.03;
+			
+		}
+		else if (allStarCheck.toLowerCase() == "n") {
+			bonusAmount = 0.02;
+		}
+		
+		bonusTotal = bonusAmount * totalSales;
+		
+		return bonusTotal;
+	}
+}

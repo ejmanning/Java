@@ -1,0 +1,22 @@
+
+public class SayThankYouManning {
+	public static void main(String [] args) {
+		System.out.println(sayThanks("Bruce")); //will print "Thanks Bruce"
+		System.out.println(sayThanks("Bruce", "Springsteen")); //will print "Thank you, Bruce Springsteen"
+		System.out.println(sayThanks("Mr.", "Bruce", "Springsteen")); //will print "Thank you so very much, Mr. Bruce Springsteen"
+
+
+	}
+	
+	public static String sayThanks(String firstName) {
+		return "Thanks " + firstName;
+	}
+	
+	public static String sayThanks(String firstName, String lastName) {
+		return "Thank you " + firstName + lastName;
+	}
+	
+	public static String sayThanks(String title, String firstName, String lastName) {
+		return "Thank you so very much " + title + firstName + lastName;
+	}
+}

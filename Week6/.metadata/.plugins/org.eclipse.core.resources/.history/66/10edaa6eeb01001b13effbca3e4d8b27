@@ -1,0 +1,85 @@
+import java.util.Scanner;
+public class PasswordValidationManning {
+	public static void main(String [] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Enter a password: ");
+		String password = in.nextLine();
+		
+		System.out.println("Please confirm your password: ");
+		String confirmedPassword = in.nextLine();
+		
+		validatePassword(password, confirmedPassword);
+		
+		/*if (validatePassword(password, confirmedPassword) == true) {
+			System.out.println("Password changed"); */
+			
+		}
+		
+	
+	
+	public static boolean validatePassword(String password, String confirmedPassword) {
+		boolean valid = true;
+		
+		while(!password.equals(confirmedPassword)) {
+			valid = false;
+			System.out.println("Confirmed password is not the same as password");
+			return valid;
+			
+		}
+		
+		while(!(password.length() >= 8)) {
+			valid = false;
+			System.out.println("Password must be 8 or more characters");
+			return valid;
+			
+		} 
+			
+		char ch;
+		boolean capitalFlag = true;
+	    boolean lowerCaseFlag = true;
+	    boolean numberFlag = true;
+	    
+	    for(int i=0; i < password.length(); i++) {
+	        ch = password.charAt(i);
+	        
+	        if(!Character.isDigit(ch)) {
+	            numberFlag = false;
+	        }
+	        
+	        else if (!Character.isUpperCase(ch)) {
+	            capitalFlag = false;  
+	        } 
+	        
+	        else if (!Character.isLowerCase(ch)) {
+	            lowerCaseFlag = false;
+	            
+	        }
+	    }
+	        
+	        if (numberFlag==false) {
+	        	System.out.println("Password must contain at least one digit");
+	        }
+	        
+	        else if (capitalFlag==false) {
+	        	System.out.println("Password must contain at least one upper case letter");
+	        }
+	        
+	        else if (lowerCaseFlag==false) {
+	        	System.out.println("Password must contain at least one lower case letter");
+	        }
+	        
+	        if(numberFlag && capitalFlag && lowerCaseFlag) {
+	        	 valid = true;
+	        }
+	        
+	        else {
+	        	 valid = false;
+	        }
+	
+		
+		return valid;
+		
+	}
+}

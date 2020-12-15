@@ -1,0 +1,12 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ArrayEqualCheckManningTest extends ArrayEqualCheckManning {
+
+	@Test
+	void testAreArraysEqual() {
+		fail("Not yet implemented");
+	}
+
+}

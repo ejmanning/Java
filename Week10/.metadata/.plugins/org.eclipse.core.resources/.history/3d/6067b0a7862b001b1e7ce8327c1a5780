@@ -1,0 +1,13 @@
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class OneHundredButtonsManning {
+	public static void main(String[] args) {
+		JPanel panel = new JPanel();
+		JLabel name = new JLabel("Erica Manning");
+		panel.add(name);
+		
+	}
+	
+}
